@@ -1,0 +1,4 @@
+﻿@model MyNotesMVC.Models.Article
+
+@Html.Partial("~/Views/Home/PartialViews/_Article.cshtml", Model)
+@Html.Partial("~/Views/Home/PartialViews/_LinkedArticles.cshtml", Model.LinkedArticles, new ViewDataDictionary { { "articleClass", "linked-article" } })

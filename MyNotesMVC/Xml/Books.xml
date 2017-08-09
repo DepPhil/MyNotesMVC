@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Books>
+  <Book Name="GsPaper1" Id="Book1">
+    <Chapter Name="Chapter 1" Id="Chapter1">
+      <Section Name="Section 1" Id="Section1">
+        <LinkedArticle>Article1</LinkedArticle>
+        <LinkedArticle>Article2</LinkedArticle>
+      </Section>
+      <Section Name="Section 2" Id="Section2">
+        <LinkedArticle>Article3</LinkedArticle>
+        <LinkedArticle>Article4</LinkedArticle>
+      </Section>
+      <Section Name="Section 3" Id="Section3">
+        <LinkedArticle>Article5</LinkedArticle>
+        <LinkedArticle>Article6</LinkedArticle>
+      </Section>
+    </Chapter>
+    <Chapter Name="Chapter 2" Id="Chapter2">
+      <Section Name="Section 1" Id="Section4">
+        <LinkedArticle>Article2</LinkedArticle>
+      </Section>
+      <Section Name="Section 2" Id="Section5">
+        <LinkedArticle>Article1</LinkedArticle>
+        <LinkedArticle>Article2</LinkedArticle>
+      </Section>
+      <Section Name="Section 3" Id="Section6">
+        <LinkedArticle>Article3</LinkedArticle>
+        <LinkedArticle>Article5</LinkedArticle>
+      </Section>
+    </Chapter>
+    <Chapter Name="Chapter 3" Id="Chapter3">
+      <Section Name="Section 1" Id="Section7">
+        <LinkedArticle>Article1</LinkedArticle>
+        <LinkedArticle>Article2</LinkedArticle>
+      </Section>
+      <Section Name="Section 2" Id="Section8">
+        <LinkedArticle>Article3</LinkedArticle>
+        <LinkedArticle>Article6</LinkedArticle>
+      </Section>
+    </Chapter>
+    <Chapter Name="Chapter 4" Id="Chapter4">
+      <Section Name="Section 1" Id="Section9">
+        <LinkedArticle>Article1</LinkedArticle>
+        <LinkedArticle>Article2</LinkedArticle>
+      </Section>
+      <Section Name="Section 2" Id="Section10">
+        <LinkedArticle>Article4</LinkedArticle>
+        <LinkedArticle>Article7</LinkedArticle>
+      </Section>
+    </Chapter>
+    <Chapter Name="Chapter 5" Id="Chapter5">
+      <Section Name="Section 1" Id="Section11">
+        <LinkedArticle>Article1</LinkedArticle>
+        <LinkedArticle>Article2</LinkedArticle>
+      </Section>
+      <Section Name="Section 2" Id="Section12">
+        <LinkedArticle>Article3</LinkedArticle>
+        <LinkedArticle>Article4</LinkedArticle>
+      </Section>
+      <Section Name="Section 3" Id="Section13">
+        <LinkedArticle>Article5</LinkedArticle>
+        <LinkedArticle>Article6</LinkedArticle>
+      </Section>
+      <Section Name="Section 4" Id="Section14">
+        <LinkedArticle>Article1</LinkedArticle>
+        <LinkedArticle>Article2</LinkedArticle>
+      </Section>
+    </Chapter>
+  </Book>
+</Books>

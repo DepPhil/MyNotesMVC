@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Articles>
+  <ArticleCount>8</ArticleCount>
+  <Article Id="Article1">
+    <Name>Article 1</Name>
+    <Image>Link to the image</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article2">Article 2</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article1</LinkedArticle>
+      <LinkedArticle>Article3</LinkedArticle>
+      <LinkedArticle>Article4</LinkedArticle>
+      <LinkedArticle>Article5</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+  <Article Id="Article2">
+    <Name>Article 2</Name>
+    <Image>Link to the image</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article3">Article 3</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article2</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+  <Article Id="Article3">
+    <Name>Article 3</Name>
+    <Image>/Images/ias.png</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article4">Article 4</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article1</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+  <Article Id="Article4">
+    <Name>Article 4</Name>
+    <Image>/Images/ias.png</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article5">Article 5</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article1</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+  <Article Id="Article5">
+    <Name>Article 5</Name>
+    <Image>/Images/ias.png</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article2">Article 2</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article1</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+  <Article Id="Article6">
+    <Name>Article 6</Name>
+    <Image>/Images/ias.png</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article2">Article 2</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article1</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+  <Article Id="Article7">
+    <Name>Article 7</Name>
+    <Image>/Images/ias.png</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article2">Article 2</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article1</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+  <Article Id="Article8">
+    <Name>Article 8</Name>
+    <Image>/Images/ias.png</Image>
+    <Description>A short description of the article</Description>
+    <Content>
+      <p>Main Content</p>
+      <p>Can consist of multiple paragraphs.</p>
+      <p>
+        Many contain link to other articles. Like <a class="link" id="Article2">Article 2</a>
+      </p>
+    </Content>
+    <LinkedArticles>
+      <LinkedArticle>Article1</LinkedArticle>
+    </LinkedArticles>
+  </Article>
+</Articles>

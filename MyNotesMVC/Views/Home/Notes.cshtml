@@ -1,0 +1,53 @@
+﻿@model MyNotesMVC.Models.ViewModel
+
+
+
+@{
+    ViewBag.Title = "Notes";
+    string tabId = "#tab" + Model.Article.Id;
+}
+<div class="col-md-2" name="BookView">
+    <h4><a data-toggle="collapse" href="#sideBar" role="button">Index</a></h4>
+    <div class="list-group collapse in" id="sideBar">
+        @Html.Partial("~/Views/Home/PartialViews/_Book.cshtml", Model.Book)
+    </div>
+</div>
+
+
+<div id="getArticle">
+    <div class="col-md-8" name="MainArticleView">
+        <!--Nav Tabs-->
+        @*Append to li element for more tab links.
+            When adding main article, must delete the existing tab links and panes.*@
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active my-tab-link"><a href=@tabId aria-controls="home" role="tab" data-toggle="tab">Main Article</a></li>
+        </ul>
+
+        <!--Tab panes-->
+            @*Append to _Article partial view for more tabs*@
+        <div class="tab-content">
+            @Html.Partial("~/Views/Home/PartialViews/_Article.cshtml", Model.Article)
+        </div>
+        
+    </div>
+    <div class="col-md-2 pre-scrollable" name="RelatedArticleView">
+        <h4>Related Articles</h4>
+        @Html.Partial("~/Views/Home/PartialViews/_LinkedArticles.cshtml", Model.Article.LinkedArticles, new ViewDataDictionary { { "articleClass", "linked-article" } })
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" aria-label="...">
+            </span>
+            <a class="list-group-item" role="button" href="">Article 1</a>
+        </div><!-- /input-group -->
+    </div>
+   
+</div>
+
+
+
+
+@section scripts
+{
+
+    <script src='@Url.Content("~/Scripts/custom.js")'></script>
+}

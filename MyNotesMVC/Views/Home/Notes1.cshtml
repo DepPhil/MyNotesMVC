@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Notes";
+}
+
+<div class="modal fade"  id="modal1" tabindex="1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Hello! I'm a modal</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top:10px;">
+    <div class="col-md-2">
+        <h4>Index</h4>
+        <div class="list-group">
+            <a role="button" data-toggle="collapse" href="#ch1" class="list-group-item"><span>Chapter 1</span></a>
+            <div id="ch1" class="collapse list-group" style="margin-bottom:0;">
+                <a role="button" data-toggle="collapse" href="#sec1" class="list-group-item">
+                    <span style="margin-left:10px">Section 1</span>
+                </a>
+                <div id="sec1" class="collapse list-group">
+                    <a role="button" href="#" class="list-group-item"><span style="margin-left:20px">Article 1</span></a>
+                    <a role="button" href="#" class="list-group-item"><span style="margin-left:20px">Article 2</span></a>
+                </div>
+                <a role="button" data-toggle="collapse" href="#sec2" class="list-group-item">
+                    <span style="margin-left:10px">Section 2</span>
+                </a>
+
+            </div>
+            <a role="button" data-toggle="collapse" href="#ch1" class="list-group-item"><span>Chapter 1</span></a>
+
+           
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h4>Main Article</h4>
+        <div class="well" style="font-size:1.5em;">
+            <h2>Civil Services Preparation Notes</h2>
+            <img src="~/Content/Images/ias.png" class="thumbnail" />
+            <p class="">Read the notes in more dynamic manner. Inter-related 
+            <a data-toggle="popover" title="<span style='font-size: 16px'>I'm a title</span>" data-content="<span style='font-size: 16px'>An Article is an Article</span> <img src='/Content/Images/ias.png' style='width:100px;height:100px'/>"  
+               data-html="true"
+               data-trigger="hover" role="button" href="#">Articles</a>
+            and tool-tips for better understanding.</p>
+
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <h4>Related Articles</h4>
+        <div class="list-group">
+            <a href="#" class="list-group-item">Article 1</a>
+            <a href="#" class="list-group-item">Article 2</a>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts
+
+{
+    <script src="@Url.Content("~/Scripts/custom.js")" ></script>
+}
+
+

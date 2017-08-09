@@ -1,0 +1,21 @@
+﻿@model MyNotesMVC.Models.Book
+
+
+        @foreach (var chapter in Model.Chapters)
+        {
+            <a class="list-group-item"  data-toggle="collapse" href="#@chapter.Id">@chapter.Name</a>           
+            <div id=@chapter.Id class="collapse list-group" style="margin-bottom:0px;">
+                @foreach (var _section in chapter.Sections)
+                {
+                    <a class="list-group-item list-group-item-success" data-toggle="collapse" href="#@_section.Id">@_section.Name</a>                    
+                    <div id=@_section.Id class="collapse panel-collapse list-group" style="margin-bottom:0px;">
+                        @Html.Partial("~/Views/Home/PartialViews/_LinkedArticles.cshtml", _section.LinkedArticles, new ViewDataDictionary { { "articleClass", "main-article" } })
+                        
+                    </div>
+                }
+
+            </div>
+        }
+
+
+    

@@ -1,0 +1,15 @@
+﻿@model MyNotesMVC.Models.Article
+
+@{ 
+    string idString = "tab" + Model.Id;
+}
+
+<div class="well tab-pane active my-tab-pane" role="tabpanel" id=@idString style="font-size:1.5em;">
+    <h2 id="myHeading">@Model.Name</h2>
+    <img src="@Model.Image" class="thumbnail"/>
+    @Html.Raw(Model.Content)
+    <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="5" id="comment" style="max-width:none;"></textarea>
+    </div>
+</div>
